@@ -1,10 +1,29 @@
 import { Header } from "@/components/Header";
 import { Providers } from "@/components/Providers";
 import "@rainbow-me/rainbowkit/styles.css";
-import { Inter } from "next/font/google";
+import { Noto_Sans_JP, Roboto, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({
+  weight: ["400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-roboto",
+});
+
+const robotoMono = Roboto_Mono({
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-roboto-mono",
+});
+
+const notoSansJP = Noto_Sans_JP({
+  weight: ["400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-noto-sans-jp",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -18,7 +37,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`${roboto.variable} ${robotoMono.variable} ${notoSansJP.variable}`}
+      >
         <Providers>
           <Header />
           {children}
