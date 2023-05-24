@@ -3100,30 +3100,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"next-simple@workspace:apps/next-simple":
-  version: 0.0.0-use.local
-  resolution: "next-simple@workspace:apps/next-simple"
-  dependencies:
-    "@types/node": 20.1.7
-    "@types/react": 18.2.6
-    "@types/react-dom": 18.2.4
-    autoprefixer: 10.4.14
-    class-variance-authority: ^0.6.0
-    clsx: ^1.2.1
-    eslint: 8.40.0
-    eslint-config-next: 13.4.2
-    lucide-react: ^0.218.0
-    next: 13.4.2
-    postcss: 8.4.23
-    react: 18.2.0
-    react-dom: 18.2.0
-    tailwind-merge: ^1.12.0
-    tailwindcss: 3.3.2
-    tailwindcss-animate: ^1.0.5
-    typescript: 5.0.4
-  languageName: unknown
-  linkType: soft
-
 "next@npm:13.4.2":
   version: 13.4.2
   resolution: "next@npm:13.4.2"
@@ -4260,9 +4236,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"templete@workspace:packages/templete":
+"template@workspace:packages/template":
   version: 0.0.0-use.local
-  resolution: "templete@workspace:packages/templete"
+  resolution: "template@workspace:packages/template"
   dependencies:
     "@tsconfig/node18": ^2.0.0
     "@types/node": ^20.1.2
